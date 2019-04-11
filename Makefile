@@ -15,9 +15,6 @@ docker-start:
 	@echo "starting the service in container..."
 	docker run -v /home/:/home/ -p 8080:8080 tbalson/cpu
 
-dest:
-	mkdir -p $(DESTDIR)/time/flaskConnexion
-	cp server.py $(DESTDIR)/time/flaskConnexion
 
 service:
 	@echo "creating the service..."
