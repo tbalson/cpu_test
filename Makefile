@@ -1,7 +1,4 @@
 DESTDIR=server
-define terminal
-	osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
-endef
 
 all: start
 	@echo "Done"
