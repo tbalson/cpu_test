@@ -15,14 +15,13 @@ docker-start:
 	@echo "starting the service in container..."
 	docker run -v /home/:/home/ -p 8080:8080 tbalson/cpu
 
-
 service:
 	@echo "creating the service..."
 	pip install --upgrade pip
 	pip install -r requirements.txt
 
 start:  
-	@echo "starting the service..."
+	@echo "starting the NEW service..."
 	pip install --upgrade pip && \
 	pip install -r requirements.txt && \
 	python server.py
