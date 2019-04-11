@@ -14,7 +14,7 @@ RUN apt-get update -q && apt-get install -qy \
     default-jre \
     software-properties-common -y
 
-RUN git clone https://github.com/tbalson/cpu_test.git 
+RUN git clone https://github.com/tbalson/cpu_test.git
 
 WORKDIR cpu_test
 
