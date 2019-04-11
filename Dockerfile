@@ -21,6 +21,6 @@ WORKDIR cpu_test/
 EXPOSE 8080
 
 
-RUN pip install -r requirements.txt && python server.py
+RUN make start
 
 CMD ["make", "start", "python", "pip"]
