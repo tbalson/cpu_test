@@ -16,7 +16,8 @@ docker-start:
 	docker run -v /home/:/home/ -p 8080:8080 tbalson/cpu
 
 dest:
-	mkdir -p $(DESTDIR)
+	mkdir -p $(DESTDIR)/time/flaskConnexion
+        cp server.py $(DESTDIR)/time/flaskConnexion
 
 service:
 	@echo "creating the service..."
@@ -41,7 +42,3 @@ docker-remove:
 
 docker-clean: docker-stop docker-remove
 	@echo "DONE"
-
-
-
-
