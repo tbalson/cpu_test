@@ -21,7 +21,7 @@ docker-start:
 dest:
 	mkdir -p $(DESTDIR)
 
-service: dest
+service:
 	@echo "creating the service..."
 	pip install --upgrade pip
 	pip install -r requirements.txt
