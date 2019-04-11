@@ -20,6 +20,6 @@ WORKDIR tbalson/cpu_test
 
 EXPOSE 8080
 
-RUN make service
+RUN make start
 
 CMD ["make", "start"]

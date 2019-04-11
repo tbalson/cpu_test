@@ -25,7 +25,6 @@ service: dest
 	@echo "creating the service..."
 	pip install --upgrade pip
 	pip install -r requirements.txt
-	start
 
 start:  
 	@echo "starting the service..."
