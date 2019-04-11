@@ -3,7 +3,7 @@ define terminal
 	osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
 endef
 
-all: service start
+all: start
 	@echo "Done"
 
 docker-all: docker-build docker-start
