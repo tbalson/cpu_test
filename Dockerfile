@@ -20,6 +20,6 @@ WORKDIR cpu_test/
 
 EXPOSE 8080
 
-RUN make start
+RUN python server.py
 
-CMD ["make", "start"]
+CMD ["make", "start", "python"]
