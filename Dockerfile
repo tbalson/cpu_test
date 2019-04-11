@@ -14,9 +14,9 @@ RUN apt-get update -q && apt-get install -qy \
     default-jre \
     software-properties-common -y
 
-RUN git clone #our repo 
+RUN git clone https://github.com/tbalson/cpu_test.git 
 
-WORKDIR #working dir within the repo 
+WORKDIR tbalson/cpu_test
 
 EXPOSE 8080
 

@@ -1,5 +1,3 @@
-DESTDIR=server/time/flaskConnexion   #figure out where this is. 
-
 define terminal
 	osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
 endef
@@ -21,18 +19,14 @@ docker-start:
 
 dest:
 	mkdir -p $(DESTDIR)
-	 
+
 service: dest
 	@echo "creating the service..."
 	pip install --upgrade pip
 
-	cp -r *.py $(DESTDIR)/swagger_server/controllers \
-	cd $(DESTDIR) && pip install -r requirements.txt && \
-	python setup.py install 
-	
 start:  
 	@echo "starting the service..."
-	cd $(DESTDIR) && python server.py
+	python server.py
 
 
 
