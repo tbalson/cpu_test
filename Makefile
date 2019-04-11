@@ -42,3 +42,7 @@ docker-remove:
 
 docker-clean: docker-stop docker-remove
 	@echo "DONE"
+
+clean:
+	@echo "removing service files created"
+	rm -rf $(CREATED)
