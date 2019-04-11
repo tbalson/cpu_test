@@ -1,7 +1,7 @@
 """
 Main module of the server file
 """
-
+from Flask import flask
 from flask import jsonify
 import connexion
 
