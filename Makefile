@@ -12,7 +12,7 @@ docker-build:
 	@echo "image DONE"
 
 docker-start:
-	@echo "starting the service in container..."
+	@echo "starting the NEW service in container..."
 	docker run -v /home/:/home/ -p 8080:8080 tbalson/cpu
 
 service:
