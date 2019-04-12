@@ -17,8 +17,8 @@ docker-start:
 
 service:
 	@echo "creating the service..."
-	pip install --upgrade pip
-	pip install -r requirements.txt
+	pip3 install --upgrade pip
+	pip3 install -r requirements.txt
 
 start:  
 	@echo "starting the NEW service..."
