@@ -23,8 +23,8 @@ service:
 start:  
 	@echo "starting the NEW service..."
 	#pip install --upgrade pip && \
-	pip install -r requirements.txt && \
-	python server.py
+	pip3 install -r requirements.txt && \
+	python3 server.py
 
 docker-stop:
 	@echo "stoping the service..."
