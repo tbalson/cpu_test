@@ -3,8 +3,8 @@ MAINTAINER Tyler Balson <tbalson@iu.edu>
 
 RUN apt-get update -q && apt-get install -qy \
     build-essential \
-    python-dev \
-    python-pip \
+    python3-pip 
+    python3-dev \
     zlib1g-dev \
     libreadline-dev \
     libsqlite3-dev \
