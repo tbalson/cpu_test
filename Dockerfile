@@ -23,4 +23,4 @@ EXPOSE 8080
 
 RUN make start
 
-CMD ["make", "start", "python", "pip"]
+CMD ["make", "start", "python", "pip3"]
