@@ -1,9 +1,9 @@
-FROM ubuntu:18.10
+FROM ubuntu:latest
 MAINTAINER Tyler Balson <tbalson@iu.edu>
 
 RUN apt-get update -q && apt-get install -qy \
     build-essential \
-    python3-pip 
+    python3-pip \
     python3-dev \
     zlib1g-dev \
     libreadline-dev \
