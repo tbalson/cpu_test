@@ -17,14 +17,14 @@ docker-start:
 
 service:
 	@echo "creating the service..."
-	pip3 install --upgrade pip
-	pip3 install -r requirements.txt
+	pip install --upgrade pip
+	pip install -r requirements.txt
 
 start:  
 	@echo "starting the NEW service..."
-	pip install --upgrade pip && \
-	pip install -r requirements.txt && \
-	python3 server.py
+	pip install --upgrade pip
+	pip install -r requirements.txt
+	python server.py
 
 docker-stop:
 	@echo "stoping the service..."
