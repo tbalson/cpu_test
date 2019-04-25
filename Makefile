@@ -8,7 +8,7 @@ docker-all: docker-build docker-start
 
 docker-build:
 	@echo "building the image from docker file..."
-	docker build -t tbalson/cpu .
+	docker build --no-cache --pull -t tbalson/cpu .
 	@echo "image DONE"
 
 docker-start:
