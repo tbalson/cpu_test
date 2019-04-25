@@ -18,8 +18,11 @@ RUN git clone https://github.com/tbalson/cpu_test.git
 
 WORKDIR cpu_test/
 
+RUN git pull
+
 EXPOSE 8080
 
+RUN pip install -r requirements.txt
 
 RUN make start
 
